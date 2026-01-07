@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="title">Sorting Algorithms Visualization</h1>
+    </header>
+
+    <div class="controls">
+
+        <div class="input-row">
+            <label for="arrayInput" class="input-label">Enter array elements:</label>
+            <input id="arrayInput" type="text" placeholder="e.g. 5,3,8,1 or 5 3 8 1" aria-label="Array input">
+            <button id="useArrayBtn">Use Array</button>
+            <button id="newArrayBtn">Random Array</button>
+        </div>
+
+        <div class="algo-row">
+            <button id="bubbleBtn">Bubble Sort</button>
+            <button id="selectionBtn">Selection Sort</button>
+            <button id="insertionBtn">Insertion Sort</button>
+            <button id="quickBtn">Quick Sort</button>
+            <button id="mergeBtn">Merge Sort</button>
+        </div>
+
+        <div id="status" aria-live="polite" class="status"></div>
+    </div>
+
+    <div id="container" class="bar-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
